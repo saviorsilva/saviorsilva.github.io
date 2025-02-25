@@ -1,0 +1,192 @@
+/* Estilização geral */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Container centralizado */
+.container {
+  width: 80%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navegação */
+header {
+  background: #333;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+}
+
+/* Layout flexível */
+.contato-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Formulário */
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  background: #007BFF;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* WhatsApp Contato */
+.contato-lateral {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  background: #25D366;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contato-lateral a {
+  text-decoration: none;
+}
+
+.whatsapp-btn {
+  background: white;
+  color: #25D366;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  display: block;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.whatsapp-btn:hover {
+  background: #1da851;
+  color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+      padding: 15px;
+  }
+
+  .contato-container {
+      flex-direction: column;
+  }
+
+  .contato-lateral {
+      margin-top: 20px;
+  }
+}
+
+/* Centralizar o título e a imagem */
+#sobre {
+  text-align: center;
+}
+
+/* Estilização da imagem do perfil */
+#profile {
+  width: 120px;  /* Reduz o tamanho da imagem */
+  height: 120px;
+  border-radius: 50%; /* Deixa a imagem arredondada */
+  border: 3px solid #007BFF; /* Adiciona uma borda azul */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona um leve sombreamento */
+  display: block;
+  margin: 10px auto; /* Centraliza horizontalmente */
+}
+
+/* Centralizar todos os títulos */
+h1, h2 {
+  text-align: center;
+}
+
+/* Manter o restante do conteúdo alinhado à esquerda */
+.container {
+  text-align: left;
+}
+
+/* Centralizar a imagem do perfil */
+#profile {
+  width: 120px;  /* Reduz o tamanho da imagem */
+  height: 120px;
+  border-radius: 50%; /* Deixa a imagem arredondada */
+  border: 3px solid #007BFF; /* Adiciona uma borda azul */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona um leve sombreamento */
+  display: block;
+  margin: 10px auto; /* Centraliza a imagem */
+}
